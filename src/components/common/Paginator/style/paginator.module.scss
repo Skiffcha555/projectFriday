@@ -1,0 +1,88 @@
+.paginator {
+    display: flex;
+    flex-direction: row;
+    float: right;
+    padding: 2px;
+    align-items: center;
+    margin: 20px 0 20px 0;
+
+    .pageNumber {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 24px;
+        height: 24px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        color: #2d2e46;
+        cursor: pointer;
+    }
+
+    .selectedPage {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 24px;
+        height: 24px;
+        background: #21268f;
+        border-radius: 2px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        color: #f2f5f7;
+        cursor: pointer;
+    }
+
+    .left {
+        border: solid black;
+        border-width: 0 1px 1px 0;
+        display: inline-block;
+        margin-right: 10px;
+        padding: 3px;
+        cursor: pointer;
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+    }
+
+    .right {
+        border: solid black;
+        border-width: 0 1px 1px 0;
+        display: inline-block;
+        margin-left: 10px;
+        padding: 3px;
+        cursor: pointer;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
+
+    .pageSettings {
+        margin-left: 40px;
+        display: flex;
+        align-items: center;
+
+        & span {
+            font-family: Lato;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 14px;
+            color: #2d2e46;
+        }
+
+        & select {
+            width: 39px;
+            height: 24px;
+            margin: 0 10px 0 10px;
+            background: #ffffff;
+            border: 1px solid #635d80;
+            cursor: pointer;
+        }
+    }
+}

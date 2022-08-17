@@ -1,0 +1,16 @@
+.input {
+    width: 347px;
+    height: 48px;
+    left: 467px;
+    top: 252px;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.errorInput {
+    border: 3px solid #08152c;
+    background: #520a27;
+    text-align: center;
+}

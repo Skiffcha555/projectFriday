@@ -1,0 +1,89 @@
+.container {
+  width: 30%;
+  align-self: center;
+  margin-top: 25px;
+
+  background: #f9f9fe;
+  border-radius: 8px;
+
+  @media screen and (max-width: 750px) {
+    width: 80%;
+  }
+
+  & form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+
+    & h1 {
+      margin-top: 25px;
+      width: 163px;
+      height: 39px;
+
+      font-weight: 600;
+      font-size: 26px;
+      line-height: 39px;
+
+      color: #2d2e46;
+    }
+
+    & h2 {
+      margin-top: 32px;
+      width: 85px;
+      height: 33px;
+      margin-bottom: 40px;
+
+      font-size: 22px;
+      line-height: 33px;
+
+      color: #2d2e46;
+    }
+
+    .error {
+      font-family: "SF UI Display" Thin;
+      height: 20px;
+      color: red;
+    }
+
+    .buttons {
+      width: 100%;
+      margin: 35px 0 35px 0;
+
+      font-family: "SF UI Display" Thin;
+      font-weight: 500;
+      line-height: 19px;
+
+      letter-spacing: 0.01em;
+
+      & button {
+        height: 36px;
+        width: 30%;
+        margin-right: 33px;
+        cursor: pointer;
+        border: none;
+
+        background: #21268f;
+        border-radius: 30px;
+        color: #ececf9;
+        text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+      }
+
+      & button:nth-child(1) {
+        margin-left: 33px;
+        height: 36px;
+        border-radius: 30px;
+        background-color: #d7d8ef;
+
+        color: #21268f;
+        opacity: 0.8;
+        text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+      }
+    }
+  }
+}

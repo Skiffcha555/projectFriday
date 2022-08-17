@@ -1,0 +1,53 @@
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    & button {
+        height: 24px;
+        padding: 0 3px 0 3px;
+        font-family: "SF UI Display" Thin;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 14px;
+        border-radius: 2px;
+        border: 1px solid transparent;
+        cursor: pointer;
+        text-align: center;
+        color: #21268f;
+    }
+
+    & button[id="delete"] {
+        background: #f1453d;
+        color: #ffffff;
+    }
+
+    & button[id="save"] {
+        background: #21268F;
+        color: #ffffff;
+    }
+
+    .modalButtons {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+
+        color: #21268f;
+
+        & button {
+            width: 124px;
+            height: 36px;
+            border-radius: 30px;
+            font-family: "SF UI Display" Thin;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            letter-spacing: 0.01em;
+            opacity: 0.8;
+            text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+        }
+    }
+}
